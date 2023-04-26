@@ -1,0 +1,8 @@
+button {
+	display: block;
+	font: inherit; /* inherit is more important than the default value */
+	cursor: pointer; /*hand when hover over the button*/
+}
+input:focus {
+	background-color: rgb(rgb(192, 91, 175));
+}

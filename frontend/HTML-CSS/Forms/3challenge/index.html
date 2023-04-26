@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<header><h1>Contact us</h1></header>
+		<main>
+			<form action="/challenge" method="GET">
+				<section id="peronal-info">
+					<h2>How can we help you?</h2>
+					<ul>
+						<li>
+							<label for="username">Your name</label>
+							<input type="text" name="username" id="username" required />
+						</li>
+						<li>
+							<label for="email">Your E-mail Address</label>
+							<input type="email" name="Email" id="email" required />
+						</li>
+						<li>
+							<label for="phone">Your Phone Number</label>
+							<input type="tel" name="phoneNumber" id="phone" required />
+						</li>
+						<li>
+							<label for="message">Your Message</label>
+							<textarea
+								name="userMessage"
+								id="message"
+								rows="8"
+								required
+							></textarea>
+						</li>
+					</ul>
+				</section>
+
+				<section id="reply-info">
+					<label for="findUs">How did you find us ?</label>
+					<select name="findUs" id="findUs" required>
+						<option value="web">Web search</option>
+						<option value="word">Word Mouth</option>
+						<option value="other">Other</option>
+					</select>
+					<h2>How should we reply?</h2>
+					<ul>
+						<li class="inline-control">
+							<input
+								type="radio"
+								name="contact"
+								id="call"
+								value="call"
+								required
+							/>
+							<label for="call">Call me</label>
+						</li>
+						<li class="inline-control">
+							<input
+								type="radio"
+								name="contact"
+								id="email"
+								value="email"
+								required
+							/>
+							<label for="email">Send me an email</label>
+						</li>
+						<li class="inline-control">
+							<input
+								type="radio"
+								name="contact"
+								id="dont"
+								value="none"
+								required
+							/>
+							<label for="dont">Don't reply</label>
+						</li>
+					</ul>
+				</section>
+				<section class="inline-control">
+					<input
+						type="checkbox"
+						id="aceptTerms"
+						name="acccept-terms"
+						required
+					/>
+					<label for="aceptTerms">Acept Terms</label>
+				</section>
+				<section>
+					<button type="reset" class="btn-empty">Clear</button>
+					<button type="submit" class="btn-filled">Submit</button>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

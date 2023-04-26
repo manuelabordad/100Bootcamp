@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Forms</title>
+	</head>
+	<body>
+		<form action="" method="">
+			<label for="username"></label>
+			<!-- for is connected to the id input -->
+			<input type="text" name="user-name" id="username" />
+			<!-- Radio type -->
+			<h2>How we verify your account?</h2>
+			<input type="radio" name="verify" id="verify-message" />
+			<label for="verify-message">Via message</label>
+			<input type="radio" name="verify" id="verify-phone" />
+			<label for="verify-phone">Via phone</label>
+			<input type="radio" name="verify" id="verify-email" />
+			<label for="verify-email">Via email</label>
+			<!-- Dropdown -->
+			<label for="favorite-color"></label>
+			<select name="color" id="favorite-color">
+				<option value="pink">pink</option>
+				<option value="purpule">purpule</option>
+				<option value="red">red</option>
+			</select>
+			<button>Submit</button>
+			<!-- SEMENTICS -->
+			<section>
+				<ul>
+					<li>
+						<label for=""></label>
+						<input type="text" />
+					</li>
+					<li>
+						<label for=""></label>
+						<input type="text" />
+					</li>
+				</ul>
+			</section>
+		</form>
+	</body>
+</html>
